@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D-принтер в начальной школе</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: hsl(214, 81%, 70%);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .tabs {
+      background-color: #dff0ff;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .tab-button {
+      padding: 12px 20px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      color: white;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .tab-button:hover {
+      background-color: #c8e0f8;
+    }
+    .tab-button.active {
+      background-color: #4586e9;
+      color: black;
+    }
+    .tab-content {
+      display: none;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 0 0 5px 5px;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    h2 {
+      color: black;
+      margin-top: 0;
+    }
+    footer {
+      background-color: #eaecee00;
+      color: #110707;
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Внедрение 3D-принтера в начальную школу</h1>
+    <p>Современное образование для будущих новаторов</p>
+  </header>
+  <div class="tabs">
+    <button class="tab-button active" onclick="openTab(event, 'about')">О курсе</button>
+    <button class="tab-button" onclick="openTab(event, 'teachers')">Учителям</button>
+    <button class="tab-button" onclick="openTab(event, 'students')">Ученикам</button>
+    <button class="tab-button" onclick="openTab(event, 'results')">Результаты</button>
+    <button class="tab-button" onclick="openTab(event, 'contacts')">Контакты</button>
+  </div>
+
+  <div id="about" class="tab-content active">
+    <h2>О курсе</h2>
+    <p>Программа «3D-принтер в начальной школе» направлена на то, чтобы развивать у детей младшего школьного возраста техническое мышление, креативность и уверенность в работе с технологиями будущего.</p>
+    <p>Ученики 7–11 лет в течение учебного года знакомятся с основами 3D-моделирования и печати, работают в программе Tinkercad, проектируют и создают реальные объекты.</p>
+    <h3>Цели курса:</h3>
+    <ul>
+      <li>Научить детей базовым навыкам 3D-моделирования</li>
+      <li>Показать связь между виртуальным дизайном и реальными предметами</li>
+      <li>Развить навыки командной работы и проектного мышления</li>
+    </ul>
+    <h3>Структура курса:</h3>
+    <ul>
+      <li>1 занятие в неделю по 45–60 минут</li>
+      <li>Проектная деятельность в конце каждого модуля</li>
+      <li>Итоговая выставка ученических работ</li>
+    </ul>
+  </div>
+
+  <div id="teachers" class="tab-content">
+    <h2>Учителям</h2>
+    <p>Даже если вы никогда не работали с 3D-принтером, мы предоставим вам все необходимые материалы и поддержку.</p>
+    <h3>Что входит в комплект:</h3>
+    <ul>
+      <li>Методички и поурочные планы</li>
+      <li>Видеоуроки по настройке принтера</li>
+      <li>Поддержка в Telegram-чате и на форуме</li>
+    </ul>
+    <p>Курс рассчитан на педагогов без технического образования — всё объясняется простым языком. Уже через 1–2 занятия вы будете уверенно работать с оборудованием.</p>
+  </div>
+
+  <div id="students" class="tab-content">
+    <h2>Ученикам</h2>
+    <p>Вы научитесь создавать 3D-модели, проектировать полезные предметы, распечатывать их и даже проводить свои мини-эксперименты!</p>
+    <h3>Что мы делаем на занятиях:</h3>
+    <ul>
+      <li>Создаём 3D-брелоки, подставки, головоломки</li>
+      <li>Проходим мини-игры по моделированию</li>
+      <li>Изучаем, как работает 3D-принтер</li>
+      <li>Работаем в командах и защищаем проекты</li>
+    </ul>
+  </div>
+
+  <div id="results" class="tab-content">
+    <h2>Результаты</h2>
+    <p>Более 10 школ прошли пилотное внедрение, и везде результаты превзошли ожидания!</p>
+    <ul>
+      <li>Увеличился интерес к технологиям у младших школьников</li>
+      <li>Дети стали активнее участвовать в проектной деятельности</li>
+      <li>Появились кружки 3D-моделирования вне рамок основного курса</li>
+    </ul>
+    <p>Многие модели, созданные учениками, теперь используются в классе: держатели для карандашей, именные бейджи, подставки для книг и т.д.</p>
+  </div>
+
+  <div id="contacts" class="tab-content">
+    <h2>Контакты</h2>
+    <p>По всем вопросам пишите и звоните:</p>
+    <ul>
+      <li>Email: <a href="mailto:info@3dschool.ru">akniyetbaizakova@gmail.com</a></li>
+      <li>Телефон: Битенова Жасмина:+7 705 883 4824 Байзакова Акниет:+7 700 678 7754</li>
+      <li>Форум: <a href="https://forum.3dschool.ru">forum.3dschool.ru</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>© 2025 Проект "3D-принтер в школе"</p>
+  </footer>
+
+  <script>
+    function openTab(evt, tabName) {
+      var tabContents = document.getElementsByClassName("tab-content");
+      for (var i = 0; i < tabContents.length; i++) {
+        tabContents[i].classList.remove("active");
+      }
+      var tabButtons = document.getElementsByClassName("tab-button");
+      for (var i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].classList.remove("active");
+      }
+      document.getElementById(tabName).classList.add("active");
+      evt.currentTarget.classList.add("active");
+    }
+  </script>
+
+</body></html>
